@@ -1,14 +1,14 @@
 .btn-success-deal-primary {
   background: rgba(244,244,244,0);
-  color: rgba(0,0,0,0.7) !important;
+  color: $blue !important;
   padding: .5rem 1rem;
   border: none;
-  box-shadow: 0px -1px 0px $blue inset;
+  box-shadow: 0px -1px 0px $yellow inset;
   transition: all .3s ease;
   font-size: .8rem;
 
   &:hover {
-    box-shadow: 0px -40px 0px $blue inset;
-    color: $white !important;
+    box-shadow: 0px -40px 0px $yellow inset;
+    color: $blue !important;
   }
 }

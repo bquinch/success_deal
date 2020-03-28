@@ -9,6 +9,10 @@
   }
 }
 
+.footer-left {
+  border-right: 1px solid $yellow;
+}
+
 .footer-link {
   color: $white;
   text-decoration: none;
@@ -32,7 +36,7 @@
 
   .footer-left {
     border-right: none !important;
-    border-bottom: 1px solid $white;
+    border-bottom: 1px solid $yellow;
     padding-bottom: 1rem;
   }
 
