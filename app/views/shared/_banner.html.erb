@@ -1,12 +1,25 @@
-<div class="banner-color">
-  <div class="banner-violaine" style="background-image: url(<%= asset_path 'me.svg' %>)">
-    <div class="container justify-content-center">
-      <div class="banner-violaine__title" data-aos="fade" data-aos-delay="50">
-        <div class="p-3 text-center">
-          <h1>Violaine <strong>Quinchon</strong></h1>
-          <p>Responsable communication interne</p>
-        </div>
+<header class="video-container">
+  <div class="video-background">
+    <%= video_tag "banner_sd.webm", autoplay: true, loop: true, muted: true %>
+    <div class="gradient">
+    </div>
+  </div>
+  <div class="video-banner">
+    <div class="container d-flex justify-content-between">
+      <div class="banner-text d-flex justify-content-between flex-column">
+        <h1 class='banner-title'>SUCCESS <strong>DEAL</strong></h1>
+      </div>
+      <div class="citation text-center">
+        <em>
+          <i class="fas fa-quote-left"></i> Si un homme vide sa bourse dans sa tête, personne ne peut la lui prendre.
+          <br>
+        Un investissement dans le savoir paie toujours les meilleurs intérêts. <i class="fas fa-quote-right"></i>
+        </em>
+        <br>
+        <br>
+        Benjamin Franklin
       </div>
     </div>
   </div>
-</div>
+</header>
+

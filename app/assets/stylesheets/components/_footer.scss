@@ -1,21 +1,42 @@
-.footer-violaine {
-  min-height: 25vh;
-  background: $orange;
+.footer-success-deal {
+  min-height: 15vh;
+  background: $blue;
+  text-align: center;
+  color: $white;
+
+  h1, p {
+    font-size: .8rem;
+  }
 }
 
 .footer-link {
-  color: rgba(255,255,255,0.77);
+  color: $white;
   text-decoration: none;
   transition: .1s;
 
   &:hover {
     text-decoration: none;
-    color: rgba(255,255,255,0.97);
+    color:$white;
   }
 }
 
 .footer-text {
-  color: rgba(255,255,255,0.77);
+  color: $white;
   margin-bottom: 2rem;
 }
 
+@media (max-width: 500px) {
+  .footer-success-deal {
+    flex-direction: column;
+  }
+
+  .footer-left {
+    border-right: none !important;
+    border-bottom: 1px solid $white;
+    padding-bottom: 1rem;
+  }
+
+  .footer-right {
+    padding-top: 1rem;
+  }
+}

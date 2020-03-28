@@ -1,0 +1,143 @@
+.new-message-form-container,
+.about-card__left {
+  flex: 1 1 60%;
+}
+
+.message-card,
+.about-card {
+  overflow-x: hidden;
+  min-height: 60vh;
+  padding: 5rem 0rem;
+}
+
+.from-right-text {
+  margin-right: 5rem;
+}
+
+.from-left-text {
+  margin-left: 5rem;
+}
+
+.image-from-left {
+  background: $light1-blue;
+}
+
+.message-card__image,
+.about-card__image {
+  flex-shrink: 1;
+
+  img {
+    height: -webkit-fill-available;
+    box-shadow: 0px 4px 16px rgba(0,0,0,0.1);
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.new-message-form-container__title {
+  font-size: .8rem;
+  color: $blue;
+  text-align: justify;
+  border-bottom: 1px solid $blue;
+}
+
+.about-card__paragraph {
+  font-size: .8rem;
+  color: $light6-blue;
+  line-height: 1.2rem;
+  text-align: justify;
+}
+
+.about-card__title {
+  font-size: .8rem;
+  color: $blue;
+  border-bottom: 1px solid $light6-blue;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid $blue;
+  background: none;
+
+  &::placeholder {
+    color: $light3-blue;
+    font-size: .8rem;
+  }
+
+  &:focus {
+    border: none;
+    border-bottom: 1px solid $blue;
+    background: none;
+    box-shadow: none;
+  }
+}
+
+.confiance-card__title {
+  font-size: .8rem;
+  border-bottom: 1px solid $light6-blue;
+  color: $blue;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.confiance-card__image {
+  width: 100%;
+  margin: 0 auto;
+  opacity: .7;
+}
+
+.confiance-wrapper {
+  background: $light1-blue;
+}
+
+.navbar-light {
+  .navbar-toggler {
+    color: $white;
+    border-color: $white;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("logo_white.png");
+  }
+}
+
+.contact-container {
+  background-color: $light1-blue;
+}
+
+@media(max-width: 902px) {
+  .message-card,
+  .about-card {
+    flex-direction: column;
+  }
+
+  .from-right-text {
+    margin-right: 0;
+  }
+
+  .from-left-text {
+    margin-top: 3rem;
+    margin-left: 0;
+  }
+
+  .from-left-text,
+  .from-right-text {
+    padding: 0rem 3rem;
+  }
+
+  .message-card__image,
+  .about-card__image {
+    margin-top: 1rem;
+
+    img {
+      width: 80vw;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .message-card__image {
+    padding-left: 0 !important;
+  }
+}

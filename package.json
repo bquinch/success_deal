@@ -1,13 +1,15 @@
 {
-  "name": "violaine-quinchon-portfolio",
+  "name": "success_deal_website",
   "private": true,
   "dependencies": {
     "@rails/webpacker": "4.2.2",
     "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.4.1",
     "flatpickr": "^4.6.3",
+    "gulp": "^4.0.2",
     "jquery": "^3.4.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "swiper": "^5.3.6"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.10.3"

@@ -1,8 +1,15 @@
 <%= render 'shared/navbar' %>
 <%= render 'shared/banner' %>
-<div class="container">
-  <%= render 'shared/experiences' %>
+<%= render 'shared/about' %>
+<%= render 'shared/confiance' %>
+<div class="swiper-container" id='reviews'>
+  <div class="swiper-wrapper">
+    <% @reviews.each do |review| %>
+      <%= render 'shared/reviews', review: review %>
+    <% end %>
+  </div>
+  <div class="swiper-button-prev"><i class="fas fa-caret-left"></i></div>
+  <div class="swiper-button-next"><i class="fas fa-caret-right"></i></div>
 </div>
-<%= render 'shared/skills' %>
 <%= render 'shared/new-message' %>
 <%= render 'shared/footer' %>

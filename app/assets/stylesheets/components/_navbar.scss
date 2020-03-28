@@ -1,21 +1,12 @@
 .navbar-lewagon {
-  justify-content: space-around;
-  position: sticky;
+  transition: all .3s ease;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 1000;
-}
-
-.bg-orange {
-  background: $orange !important;
-}
-
-.navbar {
-  background: linear-gradient(180deg, $light-gray 0%, $light-gray 65%, rgba(244, 244, 244, 0) 100%);;
-  transition: background .3s;
-}
-
-.navbar .container{
-  justify-content: space-around !important;
+  background: $blue !important;
+  opacity: 1;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -26,18 +17,38 @@
   width: 40px;
 }
 
-.navbar-toggler-icon {
-  background-image: url('VQ.png') !important;
+.nav-link {
+  color: $white !important;
+  font-size: .9rem;
 }
 
-.navbar-toggler {
-  border-radius: 10px;
+.logo {
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  transition: opacity .3s ease;
 
-  &:focus {
-    outline: none;
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    color: $white;
+  }
+
+  &.hide {
+    opacity: 0;
   }
 }
 
 button:focus {
   outline: none;
+}
+
+.hidden {
+  background: transparent !important;
+}
+
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-direction: row-reverse;
+  }
 }

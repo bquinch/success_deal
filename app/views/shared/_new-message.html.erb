@@ -1,6 +1,6 @@
 <div class="contact-container">
   <div class="container">
-    <div class="presentation-card d-flex justify-content-between align-items-center py-5" id='contact'>
+    <div class="message-card d-flex justify-content-between align-items-center py-5" id='contact'>
       <div class="new-message-form-container p-3">
         <div class="mb-2">
           <h1 class="new-message-form-container__title pb-3 pl-3">Contact</h1>
@@ -18,10 +18,12 @@
             <%= f.input :subject, placeholder: 'Sujet du message...', label: false  %>
             <%= f.input :content, placeholder: 'Votre message...', label: false, input_html: { rows: 4 } %>
           </div>
-          <%= f.submit 'Envoyer le message', class: 'btn-violaine-primary' %>
+          <div class="text-right">
+            <%= f.submit 'Envoyer le message', class: 'btn-success-deal-primary' %>
+          </div>
         <% end %>
       </div>
-      <div class='presentation-card__image pl-5' data-aos="fade-left" ><%= image_tag "chat_person.svg", alt: "chat", width: '100%' %></div>
+      <div class='message-card__image pl-5' data-aos="fade-left" ><%= image_tag "hands.jpeg", alt: "chat" %></div>
     </div>
   </div>
 </div>
