@@ -1,6 +1,9 @@
 <header class="video-container">
   <div class="video-background">
-    <%= video_tag "banner_sd.webm", autoplay: true, loop: true, muted: true %>
+    <video autoplay muted loop autobuffer="true" poster="assets/paris.jpeg">
+      <source src="assets/banner_sd.mp4" type="video/mp4">
+      <source src="assets/banner_sd.webm" type="video/webm">
+    </video>
     <div class="gradient">
     </div>
   </div>
