@@ -1,6 +1,14 @@
 <div class="swiper-slide">
   <div class="review-slide">
     <p class='text-left'><em>"<%= review.content %>"</em></p>
-    <p class='text-right mt-3 py-3 review-author'><%= review.author %> | <%= review.company %></p>
+    <p class='text-right mt-3 py-3'>
+      <span class="review-author">
+        <%= review.author %>
+      </span>
+       |
+       <span class="review-company">
+        <%= review.company %>
+       </span>
+      </p>
   </div>
 </div>
