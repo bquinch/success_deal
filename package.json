@@ -9,7 +9,7 @@
     "gulp": "^4.0.2",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.1",
-    "swiper": "^5.3.6"
+    "swiper": "^6.5.1"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.10.3"
